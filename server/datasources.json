@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "movielist": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "movielist",
+    "password": "radha123",
+    "name": "movielist",
+    "user": "radhauser",
+    "connector": "postgresql"
+  }
+}

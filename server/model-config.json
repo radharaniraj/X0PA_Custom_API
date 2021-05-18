@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "movielist"
+  },
+  "AccessToken": {
+    "dataSource": "movielist",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "movielist",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "movielist",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "movielist",
+    "public": false
+  },
+  "Note": {
+    "dataSource": "movielist"
+  },
+  "movie": {
+    "dataSource": "movielist",
+    "public": true
+  }
+}
